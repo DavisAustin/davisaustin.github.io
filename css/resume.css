@@ -1,0 +1,203 @@
+/***************************** 
+Colors
+******************************/
+
+body {
+	background: silver;
+	background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+}
+
+.container {
+	background-color: #D1D3D4;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #03B9FF;
+	transition: color .5s ease-in-out;
+}
+
+.main-content {
+	color: #686868;
+}
+
+
+header {
+  background-color: #414042;
+}
+
+
+.pstyle {
+	color: #414042;
+}
+
+.pstyle p {
+	color: #686868;
+}
+
+.main-footer {
+	color: #414042;
+}
+
+h2 {
+	color: #414042;
+}
+
+.experience {
+	color: #414042;
+}
+
+
+/***************************** 
+Navigation
+******************************/
+
+a {
+  text-decoration: none;
+  margin: 0;
+  font-size: 18px;
+}
+
+nav ul {
+	text-align: right;
+  	margin: 0;
+  	padding: 0 60px 0 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+li {
+	list-style: none;
+	padding: 40px 20px 20px 0;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 19px;
+	opacity: 1;
+}
+
+.logo:hover {
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+
+.logohover {
+	height: 50px;
+	width: auto;
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 19px;
+	opacity: 0;
+}
+
+.logohover:hover {
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+}
+
+
+/***************************** 
+Header
+******************************/
+
+header {
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 2px solid #03B9FF;
+}
+
+/***************************** 
+Container
+******************************/
+
+.container {
+	width: 1080px;
+	margin: auto;
+}
+
+.main-content {
+	width: 50%;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+
+/***************************** 
+Paragraph Style
+******************************/
+
+.pstyle p {
+	padding: 0 0 0 40px;
+	margin: 0 0 40px 0;
+}
+
+.pstyle {
+	text-align: justify;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+}
+
+h3 {
+	padding: 0 0 0 40px;
+	margin: 0 0 10px 0;
+}
+
+
+/***************************** 
+Personal Statement
+******************************/
+
+.statement {
+	font-size: 26px;
+	margin: 150px 0 40px 0;
+}
+
+/***************************** 
+Education 
+******************************/
+
+.education {
+	font-size:26px;
+	margin: 20px 0 40px 0;
+}
+
+/***************************** 
+VCD 
+******************************/
+
+.exp {
+	font-size: 26px;
+	margin: 20px 0 40px 0;
+}
+
+/***************************** 
+Footer
+******************************/
+
+footer {
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+footer p {
+	margin: 0 0 10px 0;
+}
+
+.social-media {
+	word-spacing: 7px;
+}
+
+.social-media a:hover {
+	opacity: .4;
+}

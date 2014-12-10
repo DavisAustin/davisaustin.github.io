@@ -1,0 +1,351 @@
+/***************************** 
+Colors
+#D1D3D4
+******************************/
+
+body {
+  background: silver;
+  background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+}
+
+.container {
+  background-color: #D1D3D4;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #03B9FF;
+  transition: color .5s ease-in-out;
+}
+
+header {
+  background-color: #414042;
+}
+
+.main-footer {
+  color: #414042;
+}
+
+
+/***************************** 
+Navigation
+******************************/
+
+a {
+  text-decoration: none;
+  margin: 0;
+  font-size: 18px;
+}
+
+nav ul {
+  text-align: right;
+    margin: 0;
+    padding: 0 60px 0 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+  padding: 40px 20px 20px 0;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 19px;
+  opacity: 1;
+}
+
+.logo:hover {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.logohover {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 19px;
+  opacity: 0;
+}
+
+.logohover:hover {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+
+/***************************** 
+Header
+******************************/
+
+header {
+  width: 100%;
+  height: 80px;
+  margin: 0 0 150px 0;
+  padding: 0;
+  border-bottom: 2px solid #03B9FF;
+}
+
+/***************************** 
+Illustration
+******************************/
+
+.illustration {
+  color: #414042;
+  position: absolute;
+  margin: 255px 0 0 30px;
+  z-index: 1;
+}
+
+/***************************** 
+2D
+******************************/
+
+.twod {
+  color: #414042;
+  position: absolute;
+  margin: 575px 0 0 30px;
+  z-index: 1;
+}
+
+/***************************** 
+3D
+******************************/
+
+.threed {
+  color: #414042;
+  position: absolute;
+  margin: 892px 0 0 30px;
+  z-index: 1;
+}
+
+/***************************** 
+Container
+******************************/
+
+.container {
+  width: 1080px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/***************************** 
+Main Content
+******************************/
+
+.main-content {
+  width: 1060px;
+  overflow: hidden;
+  margin-top: 80px;
+  padding-top: 70px;
+  background: #D1D3D4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***************************** 
+PortfolioHead
+******************************/
+
+.portfoliohead {
+  color: #414042;
+  width: 50%;
+  margin:auto;
+  margin-bottom: -150px;
+  text-align: center;
+}
+
+/***************************** 
+Photobanner
+******************************/
+
+.photobanner {
+  height: 233px;
+  width: 3550px;
+  margin-bottom: 80px;
+  border-bottom: 2px solid #03B9FF;
+  background: #D1D3D4;
+  margin-top: 30px;
+}
+
+.photobanner img {
+  height: 233px;
+  width: 350px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/***************************** 
+Photobanner2
+******************************/
+
+.photobanner2 {
+  height: 233px;
+  width: 3550px;
+  margin-bottom: 80px;
+  border-bottom: 2px solid #03B9FF;
+  background: #D1D3D4;
+  margin-top: 12px;
+}
+
+.photobanner2 img {
+  height: 233px;
+  width: 350px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.photobanner2 img:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/***************************** 
+Photobanner3
+******************************/
+
+.photobanner3 {
+  height: 233px;
+  width: 3550px;
+  margin-bottom: 100px;
+  border-bottom: 2px solid #03B9FF;
+  background: #D1D3D4;
+  margin-top: 12px;
+}
+
+.photobanner3 img {
+  height: 233px;
+  width: 350px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.photobanner3 img:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+  
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/***************************** 
+KeyFrame Animation
+******************************/
+
+.first {
+  -webkit-animation: bannermove 60s linear infinite;
+  -moz-animation: bannermove 60s linear infinite;
+  -ms-animation: bannermove 60s linear infinite;
+  -o-animation: bannermove 60s linear infinite;
+  animation: bannermove 60s linear infinite;
+}
+
+@keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2125px;
+  }
+}
+
+@-webkit-keyframes "bannermove" {
+  0% {  
+    margin-left: 0px;
+  }
+  100% {  
+    margin-left: -2125px
+  }
+}
+@-o-keyframes "bannermove" {
+  0% { 
+    margin-left: 0px;
+  }
+  100% { 
+    margin-left: -2125px
+  }
+}
+@-moz-keyframes "bannermove" {
+  0% { 
+    margin-left: 0px;
+  }
+  100% { 
+    margin-left: -2125px
+  }
+}
+@keyframes "bannermove" {
+  0% { 
+    margin-left: 0px;
+  }
+  100% { 
+    margin-left: -2125px
+  }
+}
+
+/***************************** 
+Footer
+******************************/
+
+footer {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  text-align: left;
+  background: #D1D3D4;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+.social-media {
+  word-spacing: 7px;
+}
+
+.social-media a:hover {
+  opacity: .4;
+}
