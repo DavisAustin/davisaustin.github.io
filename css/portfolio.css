@@ -159,9 +159,22 @@ PortfolioHead
 .portfoliohead {
   color: #414042;
   width: 50%;
+  height: 400px;
   margin:auto;
   margin-bottom: -150px;
   text-align: center;
+}
+.portfoliohead h1 {
+  margin-bottom: 8px;
+}
+.portfoliohead span {
+  color: rgb(3, 185, 255);
+}
+.portfoliohead p {
+  margin-top: 30px;
+}
+.portfoliohead h3 {
+  margin-top: 5px;
 }
 
 /***************************** 
