@@ -1,4 +1,13 @@
 body {
+    min-height: calc(100vh - 48px);
+    min-width: calc(100vw - 48px);
+    margin: 24px;
     border: 2px solid #475363;
     border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
