@@ -3,11 +3,12 @@ body {
     min-width: calc(100vw - 48px);
     margin: 24px;
     border: 2px solid #475363;
-    border-radius: 48px;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: #475363;
     overflow: hidden;
 }
