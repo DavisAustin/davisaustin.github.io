@@ -1,0 +1,9 @@
+---
+const { label, url } = Astro.props;
+---
+
+<li>
+    <a href={url} class="flex px-2 py-2 gap-2 rounded transition ease-in-out duration-75 hover:bg-gray-800">
+        {label}
+    </a>
+</li>
