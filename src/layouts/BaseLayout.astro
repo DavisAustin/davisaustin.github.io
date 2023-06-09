@@ -5,6 +5,12 @@ import SidebarNavigation from "../components/SidebarNavigation.astro";
 const {pageTitle} = Astro.props;
 ---
 
+<style is:global>
+    a {
+        color: blue;
+    }
+</style>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -13,10 +19,12 @@ const {pageTitle} = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
     </head>
-    <body class="flex justify-center text-white min-w-screen min-h-screen bg-gray-900">
+    <body class="flex justify-center text-gray-400 min-w-screen min-h-screen bg-gray-900">
         <div class="flex flex-row flex-grow max-w-4xl">
             <SidebarNavigation />
-            <MainContent />
+             <main class="flex flex-col flex-grow pt-16 px-24">
+                 <slot />
+             </main>
         </div>
     </body>
 </html>
