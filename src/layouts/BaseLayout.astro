@@ -22,9 +22,9 @@ const {pageTitle} = Astro.props;
     <body class="flex justify-center text-gray-400 min-w-screen min-h-screen bg-gray-900">
         <div class="flex flex-row flex-grow max-w-4xl">
             <SidebarNavigation />
-             <main class="flex flex-col flex-grow pt-16 px-24">
-                 <slot />
-             </main>
+            <MainContent>
+                <slot />
+            </MainContent>
         </div>
     </body>
 </html>
