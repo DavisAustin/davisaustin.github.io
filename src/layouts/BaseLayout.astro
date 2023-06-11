@@ -3,13 +3,8 @@ import MainContent from "../components/MainContent.astro";
 import SidebarNavigation from "../components/SidebarNavigation.astro";
 
 const {pageTitle} = Astro.props;
+const currentPage = Astro.url.pathname;
 ---
-
-<style is:global>
-    a {
-        color: blue;
-    }
-</style>
 
 <html lang="en">
     <head>
@@ -24,6 +19,7 @@ const {pageTitle} = Astro.props;
             <SidebarNavigation />
             <MainContent>
                 <slot />
+                {currentPage === "/" && <h1>Same same</h1>}
             </MainContent>
         </div>
     </body>

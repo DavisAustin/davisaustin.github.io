@@ -6,7 +6,7 @@ const currentPage = Astro.url.pathname;
 <li>
   <a
     href={url}
-    class="active flex px-2 py-2 gap-2 rounded font-semibold transition ease-in-out duration-75 hover:bg-gray-800 hover:text-gray-300 active:bg-gray-800 active:text-gray-300"
+    class=`${currentPage === url ? 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex px-2 py-2 gap-2 rounded font-semibold hover:bg-gray-800 hover:text-gray-300'}`
   >
     {label}
   </a>
