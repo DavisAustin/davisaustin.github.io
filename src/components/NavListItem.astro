@@ -1,4 +1,7 @@
 ---
+import Home from 'astro-heroicons/outline/Home.astro';
+
+const leadingIcon = '';
 const { label, url } = Astro.props;
 const currentPage = Astro.url.pathname;
 ---
@@ -6,8 +9,11 @@ const currentPage = Astro.url.pathname;
 <li>
   <a
     href={url}
-    class=`${currentPage === url ? 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex px-2 py-2 gap-2 rounded font-semibold hover:bg-gray-800 hover:text-gray-300'}`
+    class=`${currentPage === url ? 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-400 hover:bg-gray-800 hover:text-gray-300'}`
   >
+  <div class="w-6 h-6">
+    <Home />
+  </div>
     {label}
   </a>
 </li>
