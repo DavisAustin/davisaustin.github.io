@@ -1,17 +1,17 @@
 ---
-import Home from 'astro-heroicons/outline/Home.astro';
+import Home from 'astro-heroicons/mini/Home.astro';
+import FolderOpen from 'astro-heroicons/mini/FolderOpen.astro';
 
-const leadingIcon = '';
 const { label, url } = Astro.props;
-const currentPage = Astro.url.pathname;
+const currentUrl = Astro.url.pathname;
 ---
 
 <li>
   <a
     href={url}
-    class=`${currentPage === url ? 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-400 hover:bg-gray-800 hover:text-gray-300'}`
+    class=`${currentUrl === url ? 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-400 hover:bg-gray-800 hover:text-gray-300'}`
   >
-  <div class="w-6 h-6">
+  <div class="w-5 h-5">
     <Home />
   </div>
     {label}

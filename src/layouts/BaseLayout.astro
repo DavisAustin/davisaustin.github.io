@@ -1,9 +1,9 @@
 ---
 import MainContent from "../components/MainContent.astro";
 import SidebarNavigation from "../components/SidebarNavigation.astro";
+import "../styles/global.css";
 
 const {pageTitle} = Astro.props;
-const currentPage = Astro.url.pathname;
 ---
 
 <html lang="en">
@@ -14,6 +14,7 @@ const currentPage = Astro.url.pathname;
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
     </head>
+    
     <body class="flex justify-center text-gray-300 min-w-screen min-h-screen max-h-screen bg-gradient-to-t from-gray-950 to-gray-900">
         <div class="flex flex-row flex-grow max-w-4xl">
             <SidebarNavigation />
