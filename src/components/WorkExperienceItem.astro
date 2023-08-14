@@ -1,0 +1,17 @@
+---
+const { companyName, jobTitle, date } = Astro.props;
+---
+
+<div class="w-full justify-start items-center gap-4 inline-flex">
+    <div class="w-12 h-12 p-2.5 bg-red-700 rounded-lg border border-gray-50 border-opacity-10 flex-col justify-center items-center gap-2.5 inline-flex">
+        <img class="w-8 h-8" src="https://via.placeholder.com/32x32" />
+    </div>
+    <div class="grow shrink basis-0 py-4 border-b border-gray-50 border-opacity-10 justify-between items-center gap-2 flex">
+        <div class="flex-col justify-start items-start inline-flex">
+            <p class="text-gray-300 text-sm font-semibold">{companyName}</p>
+            <p class="text-gray-400 text-sm font-normal">{jobTitle}</p>
+            
+        </div>
+        <p class="text-gray-400 text-sm font-normal leading-none">{date}</p>
+    </div>
+</div>
