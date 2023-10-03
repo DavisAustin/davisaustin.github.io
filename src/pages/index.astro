@@ -1,4 +1,5 @@
 ---
+import WorkHistoryItem from "../components/WorkHistoryItem.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Home";
@@ -6,7 +7,7 @@ const pageTitle = "Home";
 
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class="flex flex-col gap-8">
+  <div class="flex flex-col gap-6">
     <section class="flex flex-col gap-4">
       <p>
         Hi, I’m Austin. Currently I’m building fintech communication and storage
@@ -21,20 +22,13 @@ const pageTitle = "Home";
         Before Redtail I worked at <a href="https://3foldcomm.com" target="_blank" class="link">3fold Communications</a> creating social campaigns, websites, and animations &#8212; among other things.
       </p>
     </section>
-    <section class="flex flex-col gap-4">
-      <h2 class="text-lg font-bold text-gray-300">Work</h2>
-      <div class="w-[448px] h-[72px] justify-start items-center gap-4 inline-flex">
-<div class="w-12 h-12 p-2.5 bg-red-700 rounded-lg border border-gray-50 border-opacity-10 flex-col justify-center items-center gap-2.5 inline-flex">
-<img class="w-8 h-8" src="https://via.placeholder.com/32x32" />
-</div>
-<div class="grow shrink basis-0 h-[72px] py-4 border-b border-gray-50 border-opacity-10 justify-between items-center gap-2 flex">
-<div class="flex-col justify-start items-start inline-flex">
-<div class="text-gray-300 text-sm font-semibold leading-tight">Redtail Technology</div>
-<div class="text-gray-400 text-sm font-normal leading-tight">Product Designer</div>
-</div>
-<div class="text-gray-400 text-xs font-normal leading-none">2021–</div>
-</div>
-</div>
+    <section class="flex flex-col">
+      <h2 class="text-lg font-bold py-2 text-gray-300">Work</h2>
+      <WorkHistoryItem companyName="Orion" jobRole="Product Designer" duration="2022&#8211;" />
+      <WorkHistoryItem companyName="Redtail Technology" jobRole="Product Designer" duration="2021&#8211;2022" />
+      <WorkHistoryItem companyName="Redtail Technology" jobRole="Graphic Designer" duration="2020&#8211;2021" />
+      <WorkHistoryItem companyName="3fold Communications" jobRole="Production Designer" duration="2019&#8211;2020" />
+      <WorkHistoryItem companyName="Meissner Sewing" jobRole="Graphic Designer" duration="2018&#8211;2019" />
     </section>
   </div>
 </BaseLayout>

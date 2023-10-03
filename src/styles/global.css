@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --color-text-primary: 
+    }
+}
+
 .link {
-    @apply text-blue-400 hover:underline hover:underline-offset-4;
+    @apply text-slate-200 font-medium decoration-2 decoration-slate-800 underline underline-offset-4 hover:decoration-blue-400;
 }
