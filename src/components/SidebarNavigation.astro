@@ -1,18 +1,29 @@
 ---
-import Home from 'astro-heroicons/solid/Home.astro'
+import Home from 'astro-heroicons/mini/Home.astro'
+import FolderOpen from 'astro-heroicons/mini/FolderOpen.astro'
+import Bars3BottomLeft from 'astro-heroicons/mini/Bars3BottomLeft.astro'
+import CubeTransparent from 'astro-heroicons/mini/CubeTransparent.astro'
 import NavListItem from "./NavListItem.astro";
 
 const currentURL = Astro.url.pathname;
 ---
 
-<nav class="flex flex-col min-w-[240px] w-60 h-full max-h-screen overflow-auto scrollbar-hide pt-16 pb-4 px-4">
+<nav class="hidden flex flex-col min-w-[240px] w-60 h-full max-h-screen overflow-auto scrollbar-hide pt-8 pb-4 px-4 md:block">
   <h2 class="pb-6 text-lg font-bold text-gray-300">Austin Davis</h2>
   <div>
     <menu>
-      <NavListItem label="Home" url="/" currentURL="{currentURL}" />
-      <NavListItem label="Projects" url="/projects/" />
-      <NavListItem label="Notepad" url="/notepad/" />
-      <NavListItem label="Focus" url="/focus/" />
+      <NavListItem label="Home" url="/" currentURL="{currentURL}">
+        <Home slot="icon" />
+      </NavListItem>
+      <NavListItem label="Projects" url="/projects/">
+        <FolderOpen slot="icon" />
+      </NavListItem>
+      <NavListItem label="Notepad" url="/notepad/">
+        <Bars3BottomLeft slot="icon" />
+      </NavListItem>
+      <NavListItem label="Focus" url="/focus/">
+              <CubeTransparent slot="icon" />
+      </NavListItem>
     </menu>
   </div>
 </nav>

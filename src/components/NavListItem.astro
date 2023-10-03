@@ -8,10 +8,11 @@ const currentUrl = Astro.url.pathname;
 <li>
   <a
     href={url}
-    class=`${currentUrl === url ? 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-400 hover:bg-gray-800 hover:text-gray-300'}`
+    class=`${currentUrl === url ? 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex px-2 py-2 gap-2 rounded font-semibold text-gray-500 hover:bg-gray-800 hover:text-gray-300'}`
   >
   <div class="w-5 h-5">
-    <Home />
+    <!-- <Home /> -->
+    <slot name="icon" />
   </div>
     {label}
   </a>
