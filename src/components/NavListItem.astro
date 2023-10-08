@@ -1,6 +1,4 @@
 ---
-import Home from 'astro-heroicons/mini/Home.astro';
-
 const { label, url } = Astro.props;
 const currentUrl = Astro.url.pathname;
 ---
@@ -8,9 +6,10 @@ const currentUrl = Astro.url.pathname;
 <li>
   <a
     href={url}
-    class=`${currentUrl === url ? 'flex items-center px-2 py-2 gap-2 rounded font-semibold text-gray-300 bg-gray-800' : 'flex items-center px-2 py-2 gap-2 rounded font-semibold text-gray-400 hover:bg-gray-800 hover:text-gray-300'}`
+    class=`${currentUrl === url ? 'flex px-4 py-2 gap-4 rounded font-semibold text-gray-300 bg-gray-800 shadow-md' : 'flex px-4 py-2 gap-4 rounded font-semibold text-gray-500 hover:bg-gray-900 hover:text-gray-300'}`
   >
-  <div class="w-5 h-5">
+  <div class="w-6 h-6">
+    <!-- <Home /> -->
     <slot name="icon" />
   </div>
     {label}
