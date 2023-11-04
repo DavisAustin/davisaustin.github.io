@@ -1,18 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from 'astro:assets';
+import myPicture from `../images/redtail-design-system-cover.png`;
 
 const pageTitle = "Projects";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <div class="flex-col justify-start items-start gap-1 inline-flex">
+    <div class="pb-4 flex-col justify-start items-start gap-1 inline-flex">
         <h1 class="text-gray-300 text-2xl font-extrabold font-['Inter'] leading-loose">{pageTitle}</h1>
         <p class="self-stretch text-gray-400 text-sm font-normal font-['Inter'] leading-tight">A currated selection of my favorite projects.</p>
     </div>
-    <div class="w-[448px] h-[308px] rounded-lg flex-col justify-start items-start inline-flex">
+    <div class="rounded-lg flex-col justify-start items-start inline-flex">
     <div class="self-stretch h-60 bg-gray-800 rounded-lg shadow border border-white border-opacity-5 justify-center items-center inline-flex">
         <div class="w-[448px] h-60 justify-center items-center flex">
-            <img class="grow shrink basis-0 self-stretch" src="https://via.placeholder.com/448x240" />
+            <Image src={myPicture} alt="Redtail Design System Cover" />
         </div>
     </div>
     <div class="self-stretch px-1 py-2 justify-start items-center gap-6 inline-flex">
