@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.0.1",
+    "@astrojs/tailwind": "^5.0.3",
     "astro": "^4.0.6",
     "astro-heroicons": "^0.3.0",
     "tailwind-scrollbar-hide": "^1.1.7",
