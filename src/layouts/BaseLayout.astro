@@ -1,32 +1,33 @@
 ---
-import MainContent from "../components/MainContent.astro";
-import SidebarNavigation from "../components/SidebarNavigation.astro";
-import "../styles/global.css";
+import MainContent from '../components/MainContent.astro'
+import SidebarNavigation from '../components/SidebarNavigation.astro'
+import '../styles/global.css'
 
-
-const {pageTitle} = Astro.props;
+const { pageTitle } = Astro.props
 ---
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{pageTitle}</title>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
 
-        <!-- Google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-    </head>
-    
-    <body class="flex justify-center text-base font-['Inter'] text-gray-300 min-w-screen min-h-screen max-h-screen bg-gradient-to-t from-gray-950 to-gray-900">
-        <div class="flex flex-row flex-grow max-w-4xl">
-            <SidebarNavigation />
-            <MainContent>
-                <slot />
-            </MainContent>
-        </div>
-    </body>
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet" />
+	</head>
+
+	<body
+		class="min-w-screen flex max-h-screen min-h-screen justify-center bg-gradient-to-t from-gray-950 to-gray-900 font-['Inter'] text-base text-gray-300"
+	>
+		<div class="flex max-w-4xl flex-grow flex-row">
+			<SidebarNavigation />
+			<MainContent>
+				<slot />
+			</MainContent>
+		</div>
+	</body>
 </html>

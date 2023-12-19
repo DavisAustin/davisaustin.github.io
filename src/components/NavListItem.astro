@@ -1,16 +1,16 @@
 ---
-const { label, url } = Astro.props;
-const currentUrl = Astro.url.pathname;
+const { label, url } = Astro.props
+const currentUrl = Astro.url.pathname
 ---
 
 <li>
-  <a
-    href={url}
-    class=`${currentUrl === url ? 'flex items-center px-4 py-2 gap-4 rounded font-semibold text-gray-300 bg-purple-800 shadow-md ring-inset ring-1 ring-purple-700' : 'flex items-center px-4 py-2 gap-4 rounded font-semibold text-gray-400 hover:text-gray-300'}`
-  >
-  <div class="w-5 h-5">
-    <slot name="icon" />
-  </div>
-    {label}
-  </a>
+	<a
+		href={url}
+		class=`${currentUrl === url ? 'flex items-center px-4 py-2 gap-2 text- rounded font-semibold text-gray-300 bg-gray-700 shadow-md' : 'flex items-center px-4 py-2 gap-2 rounded font-semibold text-gray-400 hover:text-gray-300'}`
+	>
+		<div class="h-5 w-5">
+			<slot name="icon" />
+		</div>
+		{label}
+	</a>
 </li>
