@@ -1,6 +1,7 @@
 ---
 import MainContent from '../components/MainContent.astro'
 import SidebarNavigation from '../components/SidebarNavigation.astro'
+import FocusScreen from '../components/FocusScreen.astro'
 
 const { pageTitle } = Astro.props
 ---
@@ -20,8 +21,9 @@ const { pageTitle } = Astro.props
 	</head>
 
 	<body
-		class="min-w-screen flex max-h-screen min-h-screen justify-center bg-gradient-to-t from-gray-950 to-gray-900 font-sans text-base text-gray-300"
+		class="min-w-screen text-fg-default relative flex max-h-screen min-h-screen justify-center bg-gradient-to-t from-gray-950 to-gray-900"
 	>
+    <FocusScreen />
 		<div class="flex max-w-4xl flex-grow flex-row">
 			<SidebarNavigation />
 			<MainContent>

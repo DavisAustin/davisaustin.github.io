@@ -7,26 +7,26 @@ const pageTitle = 'Projects'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<div class="inline-flex flex-col items-start justify-start gap-1 pb-4">
-		<h1 class="font-['Inter'] text-2xl font-extrabold leading-loose text-gray-300">{pageTitle}</h1>
-		<p class="self-stretch font-['Inter'] text-sm font-normal leading-tight text-gray-400">
+	<div class="inline-flex flex-col items-start justify-start gap-1 pb-8">
+		<h1 class="text-2xl font-extrabold text-fg-default">{pageTitle}</h1>
+		<p class="text-fg-muted text-lg">
 			A currated selection of my favorite projects.
 		</p>
 	</div>
 	<div class="inline-flex flex-col items-start justify-start rounded-lg">
 		<div
-			class="inline-flex h-60 items-center justify-center self-stretch rounded-lg border border-white border-opacity-5 bg-gray-800 shadow"
+			class="h-60 rounded-lg border border-white border-opacity-5 bg-gray-800 shadow"
 		>
 			<div class="flex h-60 w-[448px] items-center justify-center">
 				<Image src={myPicture} alt="Redtail Design System Cover" />
 			</div>
 		</div>
-		<div class="inline-flex items-center justify-start gap-6 self-stretch px-1 py-2">
+		<div class="gap-6 px-1 py-2">
 			<div class="inline-flex basis-0 flex-col items-start justify-start gap-1">
-				<div class="font-['Inter'] text-lg font-bold leading-7 text-gray-300">
+				<h2 class="text-lg font-bold text-fg-default">
 					Redtail Design System
-				</div>
-				<div class="self-stretch font-['Inter'] text-sm font-normal leading-tight text-gray-400">
+				</h2>
+				<div class="text-fg-muted">
 					A collaboration with the engineering team.
 				</div>
 			</div>

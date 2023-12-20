@@ -1,7 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import PageHeader from '../components/PageHeader.astro'
 
 const pageTitle = 'Notepad'
 ---
 
-<BaseLayout pageTitle={pageTitle} />
+<BaseLayout pageTitle={pageTitle}>
+  <PageHeader pageTitle={pageTitle} >
+		I don't write much, but if there's something I think you'll find interesting, I'll leave it here.
+  </PageHeader>
+</BaseLayout>

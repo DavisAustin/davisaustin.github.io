@@ -1,51 +1,66 @@
 ---
+// Icons
 import Home from 'astro-heroicons/mini/Home.astro'
 import FolderOpen from 'astro-heroicons/mini/FolderOpen.astro'
 import Bars3BottomLeft from 'astro-heroicons/mini/Bars3BottomLeft.astro'
 import CubeTransparent from 'astro-heroicons/mini/CubeTransparent.astro'
+import Bookmark from 'astro-heroicons/mini/Bookmark.astro'
+import BookOpen from 'astro-heroicons/mini/BookOpen.astro'
+import MusicalNote from 'astro-heroicons/mini/MusicalNote.astro'
+import User from 'astro-heroicons/mini/User.astro'
+import Squares2X2 from 'astro-heroicons/mini/squares2X2.astro'
+import BehanceLogo from './BehanceLogo.astro'
+
+// Components
 import NavListItem from './NavListItem.astro'
 
 const currentURL = Astro.url.pathname
 ---
 
 <nav
-	class="hidden h-full max-h-screen w-60 min-w-[240px] flex-col overflow-auto pb-4 pl-4 pt-8 scrollbar-hide md:flex"
+	class="hidden h-full max-h-screen w-60 shrink-0 flex-col overflow-auto pb-4 pl-4 pt-8 scrollbar-hide md:flex"
 >
-	<h2 class="pb-6 pl-4 text-lg font-bold text-gray-300">Austin Davis</h2>
+	<h2 class="pb-6 text-lg font-bold">Austin Davis</h2>
 	<div>
 		<menu class="flex flex-col gap-4">
 			<section>
-        <NavListItem label="Home" url="/" currentURL="{currentURL}">
-          <Home slot="icon" />
-        </NavListItem>
-        <NavListItem label="Projects" url="/projects/">
-          <FolderOpen slot="icon" />
-        </NavListItem>
-        <NavListItem label="Notepad" url="/notepad/">
-          <Bars3BottomLeft slot="icon" />
-        </NavListItem>
-        <NavListItem label="Focus" url="/focus/">
-          <CubeTransparent slot="icon" />
-        </NavListItem>
-      </section>
+				<NavListItem label="Home" url="/" currentURL="{currentURL}">
+					<Home slot="icon" />
+				</NavListItem>
+				<NavListItem label="Projects" url="/projects/">
+					<FolderOpen slot="icon" />
+				</NavListItem>
+				<NavListItem label="Notepad" url="/notepad/">
+					<Bars3BottomLeft slot="icon" />
+				</NavListItem>
+				<NavListItem label="Focus" url="/focus/">
+					<CubeTransparent slot="icon" />
+				</NavListItem>
+			</section>
 			<section>
-        <div class="pl-4 pt-4 pb-2 font-mono text-sm text-gray-400">Favorites</div>
-        <NavListItem label="Bookmarks" url="/" url="/bookmarks/">
-          <Home slot="icon" />
-        </NavListItem>
-        <NavListItem label="Books" url="/books/">
-          <FolderOpen slot="icon" />
-        </NavListItem>
-        <NavListItem label="Music" url="/music/">
-          <Bars3BottomLeft slot="icon" />
-        </NavListItem>
-        <NavListItem label="People" url="/people/">
-          <CubeTransparent slot="icon" />
-        </NavListItem>
-        <NavListItem label="Stack" url="/stack/">
-          <CubeTransparent slot="icon" />
-        </NavListItem>
-      </section>
+				<div class="font-mono pb-2 pt-4 text-sm text-fg-muted">Favorites</div>
+				<NavListItem label="Bookmarks" url="/bookmarks/">
+					<Bookmark slot="icon" />
+				</NavListItem>
+				<NavListItem label="Books" url="/books/">
+					<BookOpen slot="icon" />
+				</NavListItem>
+				<NavListItem label="Music" url="/music/">
+					<MusicalNote slot="icon" />
+				</NavListItem>
+				<NavListItem label="People" url="/people/">
+					<User slot="icon" />
+				</NavListItem>
+				<NavListItem label="Stack" url="/stack/">
+					<Squares2X2 slot="icon" />
+				</NavListItem>
+			</section>
+			<section>
+				<div class="font-mono pb-2 pt-4 text-sm text-fg-muted">Social</div>
+				<NavListItem id="openFocusBtn" label="Behance" url="https://www.behance.net/AustinDavisDesigns">
+					<BehanceLogo slot="icon" />
+				</NavListItem>
+			</section>
 		</menu>
 	</div>
 </nav>

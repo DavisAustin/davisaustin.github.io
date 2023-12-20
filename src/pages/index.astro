@@ -1,7 +1,10 @@
 ---
-import WorkHistoryItem from '../components/WorkHistoryItem.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import WorkExperienceItem from '../components/WorkExperienceItem.astro'
+import OrionLogo from '../components/logos/OrionLogo.astro'
+import RedtailLogo from '../components/logos/RedtailLogo.astro'
+import ThreeFoldLogo from '../components/logos/ThreeFoldLogo.astro'
+import MeissnerLogo from '../components/logos/MeissnerLogo.astro'
 
 const pageTitle = 'Home'
 ---
@@ -44,29 +47,44 @@ const pageTitle = 'Home'
 				> creating social campaigns, websites, and animations.
 			</p>
 		</section>
-		<section class="flex flex-col gap-4">
-			<h2 class="text-lg font-bold text-gray-300">Work</h2>
+		<section class="flex flex-col">
+			<h2 class="py-2 text-lg font-bold text-fg-default">Work</h2>
 			<div class="flex w-full flex-col">
 				<WorkExperienceItem
 					companyName="Orion Advisor Solutions"
 					jobTitle="Product Designer"
-					date="2022 –"
-				/>
+					date="2022 – Present"
+				>
+          <OrionLogo slot="logo" />
+        </WorkExperienceItem>
 				<WorkExperienceItem
 					companyName="Redtail Technology"
-					jobTitle="Production Designer"
+					jobTitle="Product Designer"
 					date="2021 – 2022"
-				/>
+				>
+          <RedtailLogo slot="logo" />
+        </WorkExperienceItem>
 				<WorkExperienceItem
 					companyName="Redtail Technology"
 					jobTitle="Graphic Designer"
 					date="2020 – 2021"
-				/>
+				>
+          <RedtailLogo slot="logo" />
+        </WorkExperienceItem>
 				<WorkExperienceItem
-					companyName="3Fold Communications"
+					companyName="3 Fold Communications"
+					jobTitle="Production Designer"
+					date="2020 – 2021"
+				>
+          <ThreeFoldLogo slot="logo" />
+        </WorkExperienceItem>
+				<WorkExperienceItem
+					companyName="Meissner Sewing"
 					jobTitle="Graphic Designer"
 					date="2019 – 2020"
-				/>
+				>
+          <MeissnerLogo slot="logo" />
+        </WorkExperienceItem>
 			</div>
 		</section>
 	</div>

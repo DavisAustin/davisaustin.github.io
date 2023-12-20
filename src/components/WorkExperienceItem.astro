@@ -6,15 +6,15 @@ const { companyName, jobTitle, date } = Astro.props
 	<div
 		class="inline-flex h-12 w-12 flex-col items-center justify-center gap-2.5 rounded-lg border border-gray-50 border-opacity-10 bg-red-700 p-2.5"
 	>
-		<img class="h-8 w-8" src="https://via.placeholder.com/32x32" />
+		<slot name="logo">
 	</div>
 	<div
 		class="flex shrink grow basis-0 items-center justify-between gap-2 border-b border-gray-50 border-opacity-10 py-4"
 	>
 		<div class="inline-flex flex-col items-start justify-start">
-			<p class="font-semibold text-gray-300">{companyName}</p>
-			<p class="text-sm font-normal text-gray-400">{jobTitle}</p>
+			<p class="font-semibold text-fg-default">{companyName}</p>
+			<p class="text-sm font-normal text-fg-muted">{jobTitle}</p>
 		</div>
-		<p class="text-xs font-mono font-normal text-gray-400">{date}</p>
+		<p class="text-sm font-mono font-normal text-fg-muted">{date}</p>
 	</div>
 </div>
