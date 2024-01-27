@@ -1,0 +1,35 @@
+---
+import NavSidebar from '../components/NavSidebar.astro'
+import NavHeader from '../components/NavHeader.astro'
+import FocusScreen from '../components/FocusScreen.astro'
+
+const { pageTitle } = Astro.props
+---
+
+<html lang="en" class="h-screen w-screen bg-gray-950 text-fg-default text-base">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet" />
+	</head>
+
+	<body
+		class="relative flex h-full w-full justify-center bg-gradient-to-t from-gray-950 to-gray-900"
+	>
+		<FocusScreen />
+		<div class="flex h-full w-full max-w-4xl flex-col md:flex-row">
+			<NavHeader />
+			<NavSidebar />
+			<main class="flex h-full max-h-screen flex-col px-8 pt-8 md:px-16 md:pt-16">
+				<slot />
+			</main>
+		</div>
+	</body>
+</html>
