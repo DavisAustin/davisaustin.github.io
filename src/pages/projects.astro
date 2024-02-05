@@ -1,35 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import { Image } from 'astro:assets'
-import myPicture from '../images/redtail-design-system-cover.png'
+import PageHeader from '../components/PageHeader.astro'
+import ProjectListItem from '../components/ProjectListItem.astro'
 
 const pageTitle = 'Projects'
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<div class="inline-flex flex-col items-start justify-start gap-1 pb-8">
-		<h1 class="text-2xl font-extrabold text-fg-default">{pageTitle}</h1>
-		<p class="text-fg-muted text-lg">
-			A currated selection of my favorite projects.
-		</p>
-	</div>
-	<div class="inline-flex flex-col items-start justify-start rounded-lg">
-		<div
-			class="h-60 rounded-lg border border-white border-opacity-5 bg-gray-800 shadow"
-		>
-			<div class="flex h-60 w-[448px] items-center justify-center">
-				<Image src={myPicture} alt="Redtail Design System Cover" />
-			</div>
-		</div>
-		<div class="gap-6 px-1 py-2">
-			<div class="inline-flex basis-0 flex-col items-start justify-start gap-1">
-				<h2 class="text-lg font-bold text-fg-default">
-					Redtail Design System
-				</h2>
-				<div class="text-fg-muted">
-					A collaboration with the engineering team.
-				</div>
-			</div>
-		</div>
-	</div>
+	<PageHeader pageTitle={pageTitle}>
+	</PageHeader>
+	<ProjectListItem />
 </BaseLayout>

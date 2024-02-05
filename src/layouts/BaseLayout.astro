@@ -6,7 +6,7 @@ import FocusScreen from '../components/FocusScreen.astro'
 const { pageTitle } = Astro.props
 ---
 
-<html lang="en" class="h-screen w-screen bg-gray-950 text-fg-default text-base">
+<html lang="en" class="bg-gray-950 text-base text-fg-default">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -21,13 +21,13 @@ const { pageTitle } = Astro.props
 	</head>
 
 	<body
-		class="relative flex h-full w-full justify-center bg-gradient-to-t from-gray-950 to-gray-900"
+		class="relative flex flex-row w-full min-w-[20rem] justify-center bg-gradient-to-t from-gray-950 to-gray-900"
 	>
 		<FocusScreen />
 		<div class="flex h-full w-full max-w-4xl flex-col md:flex-row">
 			<NavHeader />
 			<NavSidebar />
-			<main class="flex h-full max-h-screen flex-col px-8 pt-8 md:px-16 md:pt-16">
+			<main class="flex h-full w-full max-h-screen flex-col px-8 pt-8 md:px-16 md:pt-16">
 				<slot />
 			</main>
 		</div>
