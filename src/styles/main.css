@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* foreground colors */
+    --color-fg-default: theme(colors.gray.800);
+    --color-fg-muted: theme(colors.gray.600);
+    --color-fg-subtle: theme(colors.gray.400);
+    --color-fg-accent: theme(colors.blue.500);
+    --color-fg-onEmphasis: theme(colors.white);
+    /* background colors */
+    --color-bg-default: theme(colors.white);
+    --color-bg-muted: theme(colors.gray.200);
+    --color-bg-subtle: theme(colors.gray.50);
+    --color-bg-accent: theme(colors.blue.50);
+    --color-bg-emphasis: theme(colors.gray.600);
+    /* border colors */
+    --color-border-default: theme(colors.gray.300);
+    --color-border-muted: theme(colors.gray.200);
+    --color-border-emphasis: theme(colors.gray.600);
+  }
+  .dark {
+    /* foreground colors */
+    --color-fg-default: theme(colors.white);
+    --color-fg-muted: theme(colors.gray.300);
+    --color-fg-subtle: theme(colors.gray.600);
+    --color-fg-accent: theme(colors.blue.300);
+    --color-fg-onEmphasis: theme(colors.white);
+    /* background colors */
+    --color-bg-default: theme(colors.gray.950);
+    --color-bg-muted: theme(colors.gray.700);
+    --color-bg-subtle: theme(colors.gray.800);
+    --color-bg-emphasis: theme(colors.gray.500);
+    /* border colors */
+    --color-border-default: theme(colors.gray.700);
+    --color-border-muted: theme(colors.gray.800);
+    --color-border-emphasis: theme(colors.gray.500);
+  }
+}

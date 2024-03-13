@@ -2,14 +2,16 @@
 import NavSidebar from '../components/NavSidebar.astro'
 import NavHeader from '../components/NavHeader.astro'
 import FocusScreen from '../components/FocusScreen.astro'
+import '../styles/main.css'
 
 const { pageTitle } = Astro.props
 ---
 
-<html lang="en" class="bg-gray-950 text-base text-fg-default">
+<html lang="en" class="bg-bg-default text-base text-fg-default dark">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- <link rel="stylesheet" href="../styles/main.css"> -->
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
@@ -21,7 +23,7 @@ const { pageTitle } = Astro.props
 	</head>
 
 	<body
-		class="relative flex flex-row w-full min-w-[20rem] justify-center bg-gradient-to-t from-gray-950 to-gray-900"
+		class="relative flex flex-row w-full min-w-[20rem] justify-center"
 	>
 		<FocusScreen />
 		<div class="flex h-full w-full max-w-4xl flex-col md:flex-row">
