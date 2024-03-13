@@ -4,7 +4,7 @@ const { companyName, jobTitle, date, bgColor } = Astro.props
 
 <div class="flex w-full items-center justify-start gap-4">
 	<div
-		class:list={[bgColor, 'flex h-12 w-12 items-center justify-center rounded-lg border border-border-muted border-opacity-10']}
+		class:list={[bgColor, 'flex h-12 w-12 items-center justify-center rounded-lg border border-border-muted border-opacity-10 text-fg-onEmphasis']}
 	>
 		<slot name="logo" />
 	</div>

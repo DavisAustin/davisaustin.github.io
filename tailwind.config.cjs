@@ -14,6 +14,7 @@ module.exports = {
 				'fg-muted': 'var(--color-fg-muted)',
 				'fg-subtle': 'var(--color-fg-subtle)',
 				'fg-onEmphasis': 'var(--color-fg-onEmphasis)',
+				'fg-accent': 'var(--color-fg-accent)',
 				// Background colors
 				'bg-default': 'var(--color-bg-default)',
 				'bg-muted': 'var(--color-bg-muted)',
