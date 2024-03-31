@@ -4,38 +4,76 @@
 
 @layer base {
   :root {
+    /* accent colors */
+    --accent-50: theme(colors.blue.50);
+    --accent-100: theme(colors.blue.100);
+    --accent-200: theme(colors.blue.200);
+    --accent-300: theme(colors.blue.300);
+    --accent-400: theme(colors.blue.400);
+    --accent-500: theme(colors.blue.500);
+    --accent-600: theme(colors.blue.600);
+    --accent-700: theme(colors.blue.700);
+    --accent-800: theme(colors.blue.800);
+    --accent-900: theme(colors.blue.900);
+    --accent-950: theme(colors.blue.950);
+  }
+
+  /* light theme */
+  :root {
     /* foreground colors */
     --color-fg-default: theme(colors.gray.800);
     --color-fg-muted: theme(colors.gray.600);
     --color-fg-subtle: theme(colors.gray.400);
-    --color-fg-accent: theme(colors.blue.500);
+    --color-fg-accent: var(--accent-500);
+    --color-fg-accent-hover: var(--accent-600);
     --color-fg-onEmphasis: theme(colors.white);
     /* background colors */
     --color-bg-default: theme(colors.white);
+    --color-bg-default-hover: theme(colors.gray.50);
     --color-bg-muted: theme(colors.gray.200);
     --color-bg-subtle: theme(colors.gray.50);
-    --color-bg-accent: theme(colors.blue.50);
+    --color-bg-subtle-hover: theme(colors.gray.100);
+    --color-bg-accent: var(--accent-50);
+    --color-bg-accent-hover: var(--accent-100);
     --color-bg-emphasis: theme(colors.gray.600);
+    --color-bg-emphasis-hover: theme(colors.gray.700);
+    --color-bg-accent-emphasis: var(--accent-500);
+    --color-bg-accent-emphasis-hover: var(--accent-600);
     /* border colors */
     --color-border-default: theme(colors.gray.300);
     --color-border-muted: theme(colors.gray.200);
+    --color-border-accent: theme(colors.blue.300);
     --color-border-emphasis: theme(colors.gray.600);
+    --color-border-accent-emphasis: var(--accent-500);
+
   }
+
+  /* dark theme */
   .dark {
     /* foreground colors */
     --color-fg-default: theme(colors.white);
     --color-fg-muted: theme(colors.gray.300);
     --color-fg-subtle: theme(colors.gray.600);
     --color-fg-accent: theme(colors.blue.300);
+    --color-fg-accent-hover: theme(colors.blue.400);
     --color-fg-onEmphasis: theme(colors.white);
     /* background colors */
     --color-bg-default: theme(colors.gray.950);
+    --color-bg-default-hover: theme(colors.gray.900);
     --color-bg-muted: theme(colors.gray.700);
     --color-bg-subtle: theme(colors.gray.800);
+    --color-bg-subtle-hover: theme(colors.gray.700);
+    --color-bg-accent: theme(colors.blue.800);
+    --color-bg-accent-hover: theme(colors.blue.700);
     --color-bg-emphasis: theme(colors.gray.500);
+    --color-bg-emphasis-hover: theme(colors.gray.600);
+    --color-bg-accent-emphasis: theme(colors.blue.500);
+    --color-bg-accent-emphasis-hover: theme(colors.blue.600);
     /* border colors */
     --color-border-default: theme(colors.gray.700);
     --color-border-muted: theme(colors.gray.800);
+    --color-border-accent: theme(colors.blue.800);
     --color-border-emphasis: theme(colors.gray.500);
+    --color-border-accent-emphasis: theme(colors.blue.500);
   }
 }

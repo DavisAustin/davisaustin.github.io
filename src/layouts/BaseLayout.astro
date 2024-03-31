@@ -1,6 +1,6 @@
 ---
-import NavSidebar from '../components/NavSidebar.astro'
-import NavHeader from '../components/NavHeader.astro'
+import NavSidebar from '../components/navigation/NavSidebar.astro'
+import NavHeader from '../components/navigation/NavHeader.astro'
 import FocusScreen from '../components/FocusScreen.astro'
 import '../styles/main.css'
 
@@ -12,7 +12,7 @@ const { pageTitle } = Astro.props
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<!-- <link rel="stylesheet" href="../styles/main.css"> -->
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width" initial-scale="1" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 
