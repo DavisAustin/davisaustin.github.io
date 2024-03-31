@@ -10,19 +10,32 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				'fg-default': colors.white,
-				'fg-muted': colors.gray[300],
-				'fg-subtle': colors.gray[600],
-				'fg-onEmphasis': colors.white,
-				// Background colors
-				'bg-default': colors.gray[950],
-				'bg-muted': colors.gray[700],
-				'bg-subtle': colors.gray[800],
-				'bg-emphasis': colors.gray[500],
-				// Border colors
-				'border-default': colors.gray[700],
-				'border-muted': colors.gray[800],
-				'border-emphasis': colors.gray[500],
+				// foreground colors
+				'fg-default': 'var(--color-fg-default)',
+				'fg-muted': 'var(--color-fg-muted)',
+				'fg-subtle': 'var(--color-fg-subtle)',
+				'fg-accent': 'var(--color-fg-accent)',
+				'fg-accent-hover': 'var(--color-fg-accent-hover)',
+				'fg-onEmphasis': 'var(--color-fg-onEmphasis)',
+				// background colors
+				'bg-default': 'var(--color-bg-default)',
+				'bg-default-hover': 'var(--color-bg-default-hover)',
+				'bg-muted': 'var(--color-bg-muted)',
+				'bg-subtle': 'var(--color-bg-subtle)',
+				'bg-subtle-hover': 'var(--color-bg-subtle-hover)',
+				'bg-accent': 'var(--color-bg-accent)',
+				'bg-accent-hover': 'var(--color-bg-accent-hover)',
+				'bg-emphasis': 'var(--color-bg-emphasis)',
+				'bg-emphasis-hover': 'var(--color-bg-emphasis-hover)',
+				'bg-accent-emphasis': 'var(--color-bg-accent-emphasis)',
+				'bg-accent-emphasis-hover': 'var(--color-bg-accent-emphasis-hover)',
+
+				// border colors
+				'border-default': 'var(--color-border-default)',
+				'border-muted': 'var(--color-border-muted)',
+				'border-accent': 'var(--color-border-accent)',
+				'border-emphasis': 'var(--color-border-emphasis)',
+				'border-accent-emphasis': 'var(--color-border-accent-emphasis)',
 			},
 		},
 	},
