@@ -6,7 +6,7 @@ import Bars3 from 'astro-heroicons/mini/Bars3.astro'
 <header
 	class="flex w-full flex-row border-b border-border-default px-6 py-4 text-fg-default md:hidden"
 >
-	<IconButton id="menu-button">
+	<IconButton menu-button>
 		<Bars3 slot="icon" />
 	</IconButton>
 	<nav id="main-nav-menu" class="hidden">
@@ -19,21 +19,21 @@ import Bars3 from 'astro-heroicons/mini/Bars3.astro'
 </header>
 
 <script>
-  // const menuButton = document.getElementById('menu-button');
+  const menuButton = document.querySelectorAll('[menu-button]');
 
-  // menuButton.addEventListener('click', function () {
-  //   console.log('clicked');
-  // });
-	document.addEventListener('DOMContentLoaded', function () {
-		const menuBtn = document.getElementById('menu-button')
-		const mainNav = document.getElementById('main-nav-menu')
+  menuButton.addEventListener('click', function () {
+    console.log('clicked');
+  });
+	// document.addEventListener('DOMContentLoaded', function () {
+	// 	const menuBtn = document.getElementById('menu-button')
+	// 	const mainNav = document.getElementById('main-nav-menu')
 
-		menuBtn.addEventListener('click', function () {
-      console.log('clicked')
-			// Toggle the 'hidden' class upon clicking
-			mainNav.classList.toggle('hidden')
-		})
-	})
+	// 	menuBtn.addEventListener('click', function () {
+  //     console.log('clicked')
+	// 		// Toggle the 'hidden' class upon clicking
+	// 		mainNav.classList.toggle('hidden')
+	// 	})
+	// })
 
   // function toggleDropdown() {
   //   console.log('clicked')
