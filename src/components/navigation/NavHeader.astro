@@ -1,43 +1,24 @@
 ---
 import IconButton from '../IconButton.astro'
 import Bars3 from 'astro-heroicons/mini/Bars3.astro'
+import NavSidebarMobile from './NavSidebarMobile.astro'
 ---
 
 <header
 	class="flex w-full flex-row border-b border-border-default px-6 py-4 text-fg-default md:hidden"
 >
-	<IconButton menu-button>
-		<Bars3 slot="icon" />
-	</IconButton>
-	<nav id="main-nav-menu" class="hidden">
-		<ul class="flex flex-row">
-			<li class="px-4 py-2">Home</li>
-			<li class="px-4 py-2">About</li>
-			<li class="px-4 py-2">Contact</li>
-		</ul>
-	</nav>
+	<div class="row flex items-center gap-3">
+		<IconButton id="open-nav-button">
+			<Bars3 slot="icon" />
+		</IconButton>
+		<h1 class="text-lg font-bold">Austin Davis</h1>
+	</div>
+	<NavSidebarMobile />
 </header>
 
 <script>
-  const menuButton = document.querySelectorAll('[menu-button]');
 
-  menuButton.addEventListener('click', function () {
-    console.log('clicked');
-  });
-	// document.addEventListener('DOMContentLoaded', function () {
-	// 	const menuBtn = document.getElementById('menu-button')
-	// 	const mainNav = document.getElementById('main-nav-menu')
 
-	// 	menuBtn.addEventListener('click', function () {
-  //     console.log('clicked')
-	// 		// Toggle the 'hidden' class upon clicking
-	// 		mainNav.classList.toggle('hidden')
-	// 	})
-	// })
-
-  // function toggleDropdown() {
-  //   console.log('clicked')
-  //   const mainNav = document.getElementById('main-nav-menu')
-  //   mainNav.classList.toggle('hidden')
-  // }
+	// open main nav menu
+	
 </script>

@@ -1,10 +1,15 @@
 ---
-
+const { ...rest } = Astro.props
 ---
+
 <a href="#">
-  <button type="button" class="group flex h-8 w-8 justify-center items-center">
-    <div class="w-5 h-5 text-fg-muted group-hover:text-fg-default">
-      <slot name="icon"></slot>
-    </div>
-  </button>
+	<button
+		{...rest}
+		type="button"
+		class="group flex h-8 w-8 items-center justify-center rounded-full "
+	>
+		<div class="h-5 w-5 text-fg-muted group-hover:text-fg-default">
+			<slot name="icon" />
+		</div>
+	</button>
 </a>
