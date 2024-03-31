@@ -1,9 +1,11 @@
 ---
 import { Image } from 'astro:assets'
 import Image01 from '../../images/redtail-design-system-cover.png'
+
+const { url } = Astro.props
 ---
 
-<a href="#" class="flex flex-col items-start justify-start rounded-lg border border-border-muted bg-bg-default transition-shadow hover:shadow-lg hover:cursor-pointer">
+<a href={url} class="flex flex-col items-start justify-start rounded-lg border border-border-muted bg-bg-default transition-shadow hover:shadow-lg hover:cursor-pointer">
   <div class="p-1">
     <Image src={Image01} alt="Redtail Design System Cover" class="w-full rounded-md" />
   </div>
