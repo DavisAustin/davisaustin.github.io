@@ -1,7 +1,4 @@
 ---
-import NavSidebar from '../components/navigation/NavSidebar.astro'
-import NavHeader from '../components/navigation/NavHeader.astro'
-import FocusScreen from '../components/FocusScreen.astro'
 import '../styles/main.css'
 
 const { pageTitle } = Astro.props
@@ -23,16 +20,8 @@ const { pageTitle } = Astro.props
 	</head>
 
 	<body
-		class="relative flex flex-row w-full min-w-[20rem] h-screen justify-center"
+		class="flex flex-row w-full h-screen justify-center"
 	>
-		<FocusScreen />
-		<div class="flex h-full w-full max-w-4xl flex-col md:flex-row">
-			<NavHeader />
-			<NavSidebar />
-			<main class="flex h-full w-full max-h-screen flex-col px-8 pt-8 md:px-16 md:pt-16">
-				<slot />
-			</main>
-		</div>
 	</body>
 </html>
 

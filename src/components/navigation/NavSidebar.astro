@@ -13,14 +13,18 @@ import BehanceLogo from '../logos/BehanceLogo.astro'
 
 // Components
 import NavListItem from './NavListItem.astro'
-
-// const currentURL = Astro.url.pathname
+import ToggleSwitch from '../ThemeToggle.astro'
 ---
 
 <nav
 	class="hidden h-full max-h-screen w-64 shrink-0 flex-col overflow-auto px-6 pb-4 scrollbar-hide md:flex"
 >
-	<h1 class="flex h-16 flex-row items-center text-lg font-bold">Austin Davis</h1>
+	<div class="flex flex-row justify-between items-center">
+		<h1 class="flex h-16 flex-row items-center text-lg font-bold">Austin Davis</h1>
+		<div>
+			<ToggleSwitch></ToggleSwitch>
+		</div>
+	</div>
 	<div>
 		<menu class="flex flex-col gap-4">
 			<section class="flex flex-col gap-1">
