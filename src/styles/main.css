@@ -21,8 +21,8 @@
   /* light theme */
   :root {
     /* foreground colors */
-    --color-fg-default: theme(colors.gray.800);
-    --color-fg-muted: theme(colors.gray.500);
+    --color-fg-default: theme(colors.gray.900);
+    --color-fg-muted: theme(colors.gray.600);
     --color-fg-subtle: theme(colors.gray.400);
     --color-fg-accent: var(--accent-500);
     --color-fg-accent-hover: var(--accent-600);
@@ -52,8 +52,8 @@
   /* dark theme */
   .dark {
     /* foreground colors */
-    --color-fg-default: theme(colors.white);
-    --color-fg-muted: theme(colors.gray.300);
+    --color-fg-default: theme(colors.gray.300);
+    --color-fg-muted: theme(colors.gray.500);
     --color-fg-subtle: theme(colors.gray.600);
     --color-fg-accent: theme(colors.blue.300);
     --color-fg-accent-hover: theme(colors.blue.400);
@@ -71,9 +71,8 @@
     --color-bg-accent-emphasis: theme(colors.blue.500);
     --color-bg-accent-emphasis-hover: theme(colors.blue.600);
     /* border colors */
-    --color-border-default: theme(colors.gray.700);
-    --color-border-muted: theme(colors.gray.800);
-    --color-border-subtle: theme(colors.gray.900);
+    --color-border-default: theme(colors.gray.800);
+    --color-border-muted: theme(colors.gray.900);
     --color-border-accent: theme(colors.blue.800);
     --color-border-emphasis: theme(colors.gray.500);
     --color-border-accent-emphasis: theme(colors.blue.500);

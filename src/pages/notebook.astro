@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import NavLink from '../components/NavLink.astro'
+import SubNav from '../components/SubNav.astro'
+---
+
+<BaseLayout>
+	<SubNav title="Notebook">
+		<NavLink
+			url="/notebook/building-an-angular-component-library"
+			label="Building an Angular Component Library"
+			title="Building an Angular Component Library"
+		/>
+	</SubNav>
+	<slot />
+</BaseLayout>

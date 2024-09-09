@@ -1,0 +1,10 @@
+---
+import PageHeader from '../components/PageHeader.astro'
+
+const { title } = Astro.props
+---
+
+<main class="flex flex-1 flex-col p-4">
+	<PageHeader title={title} />
+	<slot />
+</main>

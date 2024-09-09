@@ -2,10 +2,10 @@
 import NavLink from "./NavLink.astro";
 ---
 
-<aside class="flex flex-shrink-0 flex-col w-48">
-  <a href="/">
-    <header class="px-4 pt-4 pb-2">
-      <h1 class="text-base font-bold">Austin Davis</h1>
+<aside class="flex flex-shrink-0 flex-col w-40 border-r border-border-default p-1">
+  <a class="mt-1" href="/">
+    <header class="px-4 py-2">
+      <span class="text-base font-bold">Austin Davis</span>
     </header>
   </a>
   <nav class="flex flex-col">
@@ -13,5 +13,6 @@ import NavLink from "./NavLink.astro";
     <NavLink url="/notebook" label="Notebook" />
     <NavLink url="/books" label="Books" />
     <NavLink url="/tools" label="Tools" />
+    <NavLink url="/frameworks" label="Frameworks" />
   </nav>
 </aside>

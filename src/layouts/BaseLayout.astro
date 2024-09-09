@@ -1,9 +1,9 @@
 ---
-import '../styles/main.css';
-import Nav from '../components/Nav.astro';
+import '../styles/main.css'
+import Nav from '../components/Nav.astro'
 ---
 
-<html lang="en" class="flex w-screen h-screen">
+<html lang="en" class="dark flex h-screen w-screen">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,10 +17,8 @@ import Nav from '../components/Nav.astro';
 		<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet" />
 	</head>
 
-	<body class="flex flex-1 subpixel-antialiased font-serif text-fg-default">
+	<body class="bg-bg-default font-serif flex flex-1 text-fg-default subpixel-antialiased">
 		<Nav />
-		<main class="flex flex-1 p-4 overflow-auto">
-			<slot />
-		</main>
+		<slot />
 	</body>
 </html>
