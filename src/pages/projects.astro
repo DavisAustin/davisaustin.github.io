@@ -1,14 +1,8 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import PageHeader from '../components/PageHeader.astro'
-import ProjectListItem from '../components/projects/ProjectListItem.astro'
-
-const pageTitle = 'Projects'
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-	<PageHeader pageTitle={pageTitle}>
-		A selection of my favorite projects.
-	</PageHeader>
-	<ProjectListItem url="./redtail-design-system.astro" />
+<BaseLayout>
+  <p>Projects page</p>
+
 </BaseLayout>

@@ -1,0 +1,17 @@
+---
+import NavLink from "./NavLink.astro";
+---
+
+<aside class="flex flex-shrink-0 flex-col w-48">
+  <a href="/">
+    <header class="px-4 pt-4 pb-2">
+      <h1 class="text-base font-bold">Austin Davis</h1>
+    </header>
+  </a>
+  <nav class="flex flex-col">
+    <NavLink url="/projects" label="Projects" />
+    <NavLink url="/notebook" label="Notebook" />
+    <NavLink url="/books" label="Books" />
+    <NavLink url="/tools" label="Tools" />
+  </nav>
+</aside>
