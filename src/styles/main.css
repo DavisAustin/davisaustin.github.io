@@ -78,3 +78,9 @@
     --color-border-accent-emphasis: theme(colors.blue.500);
   }
 }
+
+@layer components {
+  h2 {
+    @apply text-base font-bold mb-2;
+  }
+}
