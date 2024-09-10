@@ -6,7 +6,7 @@ import SubNav from '../components/SubNav.astro'
 
 <BaseLayout>
 	<SubNav title="Tools">
-		<NavLink url="#" label="Figma" title="Figma" />
+		<NavLink url="/tools/figma" label="Figma" title="Figma" />
 		<NavLink url="#" label="Arc Browser" title="Arc Browser" />
 		<NavLink url="#" label="VS Code" title="Visual Studio Code" />
 		<NavLink url="#" label="Github Desktop" title="Github Desktop" />
@@ -20,4 +20,5 @@ import SubNav from '../components/SubNav.astro'
 		<NavLink url="#" label="Microsoft Teams" title="Microsoft Teams" />
 		<NavLink url="#" label="Spotify" title="Spotify" />
 	</SubNav>
+	<slot />
 </BaseLayout>
