@@ -6,7 +6,7 @@ const { title, skills } = Astro.props
 
 <main class="flex flex-1 flex-col p-4">
 	<PageHeader title={title} skills={skills}/>
-  <div class="flex flex-col max-w-xl gap-2">
+  <div class="flex flex-col max-w-xl gap-2 overflow-y-auto">
     <slot />
   </div>
 </main>
