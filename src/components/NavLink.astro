@@ -1,10 +1,7 @@
 ---
 const { url, label, title } = Astro.props
-
 const currentUrl = Astro.url.pathname;
-
 const isActive = currentUrl.startsWith(url);
-
 const ariaCurrent = isActive ? label : undefined;
 ---
 
