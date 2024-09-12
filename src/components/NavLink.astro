@@ -1,5 +1,9 @@
 ---
-const { url, label, title } = Astro.props;
+const { url, label, title } = Astro.props
 ---
 
-<a class="text-fg-accent truncate px-4 py-1 hover:text-fg-accent-hover" href={url} title={title}>{label}</a>
+<a
+	class="relative truncate px-4 py-1 text-fg-accent after:absolute after:block after:w-1 after:bg-bg-accent-emphasis after:right-0 after:inset-y-1 after:rounded-full hover:text-fg-accent-hover"
+	href={url}
+	title={title}>{label}</a
+>
