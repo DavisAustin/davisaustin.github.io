@@ -1,0 +1,14 @@
+---
+const { title } = Astro.props;
+
+const ariaLabel = title + " sub navigation";
+---
+
+<aside class="flex flex-col w-56 border-r border-border-default p-1">
+  <header class="px-4 py-2 mt-1">
+    <span class="text-base font-bold">{title}</span>
+  </header>
+ <nav aria-label={ariaLabel} class="flex flex-col">
+   <slot />
+ </nav>
+</aside>

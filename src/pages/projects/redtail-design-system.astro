@@ -1,9 +1,10 @@
 ---
-import DetailsLayout from '../../layouts/DetailsLayout.astro'
+import Projects from '../projects.astro'
+import PageLayout from '../../layouts/PageLayout.astro'
 ---
 
-<DetailsLayout>
-	<h1>Project Name</h1>
-	<img src="" alt="" />
-	<p>Project description.</p>
-</DetailsLayout>
+<Projects>
+  <PageLayout title="Redtail Design System" skills={['Figma', 'React', 'Storybook', 'System']}>
+    <p>Redtail's Design System.</p>
+  </PageLayout>
+</Projects>

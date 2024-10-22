@@ -1,39 +1,25 @@
 ---
-import NavSidebar from '../components/navigation/NavSidebar.astro'
-import NavHeader from '../components/navigation/NavHeader.astro'
-import FocusScreen from '../components/FocusScreen.astro'
 import '../styles/main.css'
-
-const { pageTitle } = Astro.props
+import Nav from '../components/Nav.astro'
 ---
 
-<html lang="en" class="bg-bg-default text-base text-fg-default">
+<html lang="en" data-theme="dark" class="flex h-screen w-screen">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<!-- <link rel="stylesheet" href="../styles/main.css"> -->
 		<meta name="viewport" content="width=device-width" initial-scale="1" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
+		<title>Austin Davis | Portfolio</title>
 
 		<!-- Google font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 	</head>
 
-	<body
-		class="relative flex flex-row w-full min-w-[20rem] h-screen justify-center"
-	>
-		<FocusScreen />
-		<div class="flex h-full w-full max-w-4xl flex-col md:flex-row">
-			<NavHeader />
-			<NavSidebar />
-			<main class="flex h-full w-full max-h-screen flex-col px-8 pt-8 md:px-16 md:pt-16">
-				<slot />
-			</main>
-		</div>
+	<body class="bg-bg-default text-sm font-mono flex flex-1 text-fg-default subpixel-antialiased">
+		<Nav />
+		<slot />
 	</body>
 </html>
-
-<script src="../scripts/theme-switcher.js">

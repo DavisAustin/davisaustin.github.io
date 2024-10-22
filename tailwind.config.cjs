@@ -5,8 +5,9 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		fontFamily: {
+			'serif': ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
 			'sans': ['"Inter"', 'sans-serif'],
-			'mono': ['"PT Mono"', 'monospace'],
+			'mono': ['"JetBrains Mono"', '"PT Mono"', 'monospace'],
 		},
 		extend: {
 			colors: {

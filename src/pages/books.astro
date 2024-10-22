@@ -1,7 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-
-const pageTitle = 'Books'
+import NavLink from '../components/NavLink.astro'
+import SubNav from '../components/SubNav.astro'
 ---
 
-<BaseLayout pageTitle={pageTitle} />
+<BaseLayout>
+	<SubNav title="Books">
+		<NavLink url="#" label="Way of Kings" title="Way of Kings" />
+		<NavLink url="#" label="Well of Ascension" title="Well of Ascension" />
+		<NavLink url="#" label="Dungeon Crawler Carl" title="Dungeon Crawler Carl" />
+		<NavLink url="#" label="Flowers for Algernon" title="Flowers for Algernon" />
+		<NavLink url="#" label="Starter Villain" title="Starter Villain" />
+	</SubNav>
+</BaseLayout>
