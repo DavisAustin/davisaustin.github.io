@@ -6,8 +6,9 @@ import SubNav from '../components/SubNav.astro'
 
 <BaseLayout>
 	<SubNav title="Frameworks">
-		<NavLink url="#" label="Angular" title="Angular" />
-		<NavLink url="#" label="NextJs" title="NextJs" />
-		<NavLink url="#" label="Astro" title="Astro" />
+		<NavLink url="/frameworks/angular" label="Angular" title="Angular" />
+		<NavLink url="/frameworks/nextjs" label="NextJs" title="NextJs" />
+		<NavLink url="/frameworks/astro" label="Astro" title="Astro" />
 	</SubNav>
+	<slot />
 </BaseLayout>
