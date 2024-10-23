@@ -84,9 +84,9 @@
     @apply text-xl font-black;
   }
   h2 {
-    @apply text-base font-bold;
+    @apply text-base font-bold pb-2;
   }
   p {
-    @apply text-fg-muted;
+    @apply text-fg-muted pb-2;
   }
 }
