@@ -1,15 +1,16 @@
 ---
 const { url, label, title } = Astro.props
-const currentUrl = Astro.url.pathname;
-const isActive = currentUrl.startsWith(url);
-const ariaCurrent = isActive ? label : undefined;
+const currentUrl = Astro.url.pathname
+// Highlight the nav and sub nav links without highlighting the home page
+const isActive = currentUrl === url || (currentUrl.startsWith(url) && url !== '/')
+const ariaCurrent = isActive ? label : undefined
 ---
 
 <a
-class:list={[
-	"relative truncate px-4 py-1 text-fg-accent after:absolute after:w-1 after:bg-bg-accent-emphasis after:right-0 after:inset-y-1 after:rounded-full hover:text-fg-accent-hover",
-	isActive ? "after:block" : "after:hidden",
-]}
+	class:list={[
+		'relative truncate px-4 py-1 text-fg-accent after:absolute after:inset-y-1 after:right-0 after:w-1 after:rounded-full after:bg-bg-accent-emphasis hover:text-fg-accent-hover',
+		isActive ? 'after:block' : 'after:hidden'
+	]}
 	href={url}
 	title={title}
 	aria-current={ariaCurrent}>{label}</a

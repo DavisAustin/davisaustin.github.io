@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const allFrameworks = await Astro.glob("./*.md");
+
+const pageTitle = "Frameworks";
+---
+
+<BaseLayout pageTitle={pageTitle} subNavPages={allFrameworks}></BaseLayout>

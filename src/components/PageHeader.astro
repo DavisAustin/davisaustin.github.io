@@ -4,7 +4,7 @@ import Tag from './Tag.astro';
 const { title, tags } = Astro.props;
 ---
 
-<header class="flex flex-col gap-2 py-4 mx-4 border-b border-border-muted">
+<header class="flex flex-col gap-2 py-4 px-6 border-b border-border-muted">
   <h1>{title}</h1>
   {tags && tags.length > 0 && (
     <div class="flex gap-1 flex-wrap">

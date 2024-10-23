@@ -3,15 +3,15 @@ import BaseLayout from './BaseLayout.astro'
 import PageHeader from '../components/PageHeader.astro'
 import Content from '../components/Content.astro'
 
-const allProjects = await Astro.glob('../pages/projects/*.md')
-const pageTitle = 'Projects'
+const allFrameworks = await Astro.glob('../pages/frameworks/*.md')
+const pageTitle = 'Frameworks'
 
 const { frontmatter } = Astro.props
 ---
 
-<BaseLayout pageTitle={pageTitle} subNavPages={allProjects}>
+<BaseLayout pageTitle={pageTitle} subNavPages={allFrameworks}>
 	<PageHeader title={frontmatter.title} tags={frontmatter.tags} />
 	<Content>
-		<slot />
-	</Content>
+    <slot />
+  </Content>
 </BaseLayout>
