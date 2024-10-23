@@ -1,15 +1,15 @@
 ---
 import Tag from './Tag.astro';
 
-const { title, skills } = Astro.props;
+const { title, tags } = Astro.props;
 ---
 
 <header class="flex flex-col gap-2 py-4 mx-4 border-b border-border-muted">
   <h1>{title}</h1>
-  {skills && skills.length > 0 && (
+  {tags && tags.length > 0 && (
     <div class="flex gap-1 flex-wrap">
-      {skills.map((skill) => (
-        <Tag label={skill} />
+      {tags.map((tag) => (
+        <Tag label={tag} />
       ))}
     </div>
   )}

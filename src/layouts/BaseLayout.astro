@@ -1,6 +1,9 @@
 ---
 import '../styles/main.css'
 import Nav from '../components/Nav.astro'
+import SubNav from '../components/SubNav.astro';
+
+const { pageTitle = "Portfolio", subNavPages } = Astro.props;
 ---
 
 <html lang="en" data-theme="dark" class="flex h-screen w-screen">
@@ -9,17 +12,17 @@ import Nav from '../components/Nav.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" initial-scale="1" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Austin Davis | Portfolio</title>
+		<title>Austin Davis | {pageTitle}</title>
 
 		<!-- Google font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 	</head>
 
 	<body class="bg-bg-default text-sm font-mono flex flex-1 text-fg-default subpixel-antialiased">
 		<Nav />
+		{subNavPages && <SubNav title={pageTitle} subNavPages={subNavPages} />}
 		<slot />
 	</body>
 </html>

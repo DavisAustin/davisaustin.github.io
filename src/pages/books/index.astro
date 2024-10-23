@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const allBooks = await Astro.glob("./*.md");
+
+const pageTitle = "Books";
+---
+
+<BaseLayout pageTitle={pageTitle} subNavPages={allBooks}>
